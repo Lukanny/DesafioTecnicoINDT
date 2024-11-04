@@ -36,20 +36,22 @@ Este é um sistema completo de gerenciamento de usuários desenvolvido com **Fla
 
 - **Configuração:**
   - api/.env:
-  SECRET_KEY=supersecretkey
-  JWT_SECRET_KEY=superjwtsecret
-  DATABASE_URI=postgresql://user:password@db:5432/mydb
+  - SECRET_KEY=supersecretkey
+  - JWT_SECRET_KEY=superjwtsecret
+  - DATABASE_URI=postgresql://user:password@db:5432/mydb
 
   - interface/.env:
-  REACT_APP_API_URL=http://localhost:5000/api
+  - REACT_APP_API_URL=http://localhost:5000/api
+
+- **Para subir as aplicações**:
 
   - docker compose up --build
   - Entre no container e rode os seguintes comandos:
-  flask db init
-  flask db migrate -m "Initial migration."
-  flask db upgrade
-  python seeds/seed.py
+  - flask db init
+  - flask db migrate -m "Initial migration."
+  - flask db upgrade
+  - python seeds/seed.py
 
-  - Admin Credenciais:
-  admin@example.com
-  adminpassword
+  - Credenciais Admin:
+  - admin@example.com
+  - adminpassword
