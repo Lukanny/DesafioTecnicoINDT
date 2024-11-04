@@ -32,7 +32,7 @@ Este é um sistema completo de gerenciamento de usuários desenvolvido com **Fla
   - Docker
   - Nginx
 
-## Para rodar a aplicação:
+## Startando a aplicação:
 
 - **Configuração:**
   - api/.env:
